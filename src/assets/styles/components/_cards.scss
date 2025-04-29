@@ -1,0 +1,108 @@
+/*--------------------------*/
+/*#SECTION: TARJETAS PORTADA*/
+/*--------------------------*/
+
+.skinArticleGrid {
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    container-type: inline-size;
+    container-name: titles-articles;
+  
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+      color: #444;
+      margin: 0;
+    }
+  }
+
+
+/*-------------------------------*/
+/*#SECTION: TARJETAS INFO PORTADA*/
+/*-------------------------------*/
+
+.skinGridSectionInfo {
+    background-color: #e3e3e3;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  
+    h3 {
+      margin-bottom: 1rem;
+    }
+  
+    .skinImageRedes {
+      width: 25px;
+      height: auto;
+      margin: 0 10px;
+    }
+  
+    a {
+      display: inline-block;
+    }
+  }
+
+
+
+
+/*------------------------------------------*/
+/*#SECTION: TARJETAS BOOTSTRAP PARTICIPANTES*/
+/*------------------------------------------*/
+
+/* ----------- OBJECTS ----------- */
+@layer objects {
+    .participant-card {
+      flex: 1 1 18rem;
+      max-width: 18rem;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+      padding: 15px;
+    }
+  
+    .participant-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  
+    .participant-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+  
+    .participant-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  }
+  
+  /* ----------- COMPONENTS ----------- */
+    @container participants (min-width: 500px) {
+      .participant-card {
+        background-color: #ecf2ff;
+      }
+    }
+
+
+
+
+/*---------------------------------*/
+/*#SECTION: TARJETAS ASIDE JORNADAS*/
+/*---------------------------------*/
+
+/* Card */
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+  }

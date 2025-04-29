@@ -35,7 +35,8 @@
  @import "elements/links";
  @import "elements/titles";
  @import "elements/paragraph";
- 
+ @import "elements/lists";
+
  /**
   * 5. Objects – Estructuras sin estilos visuales (wrappers, containers)
   */
@@ -44,9 +45,10 @@
  /**
   * 6. Components – Componentes visuales reutilizables (cards, botones, etc.)
   */
- @import "components/portada";
+ @import "components/cards";
  @import "components/contactForm";
- 
+ @import "components/carousel";
+
  /**
   * 7. Layouts – Estructura principal del sitio (header, footer, grid)
   */
@@ -56,6 +58,8 @@
  /**
   * 8. Pages – Estilos específicos para cada página
   */
+
+ @import "pages/portada";
  @import "pages/participants";
  @import "pages/jornada";
  @import "pages/contacto";

@@ -13,8 +13,6 @@
   .contactInfoSection {
     max-width: 100vw;
     text-align: center;
-    padding: 20px 0;
-    margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -26,8 +24,6 @@
   }
 
   .contactInfoSection h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
     color: #333;
   }
 }
@@ -40,8 +36,6 @@
   }
 }
 
-.skinUlInfo {
-  list-style: none;
-  padding: 5px;
-  margin: 0;
+.contactInfoSection {
+  padding-bottom: 20px;
 }

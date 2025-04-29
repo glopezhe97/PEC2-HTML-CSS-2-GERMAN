@@ -2,7 +2,7 @@
 .skinMainJornada {
   max-width: 85%;
   margin: 20px auto;
-  container-type: inline-size;  
+  container-type: inline-size;
   background-color: hsl(0, 0%, 100%);
   padding: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -11,32 +11,6 @@
 
 .skinBodyJornada {
   background-color: hsl(0, 0%, 93%);
-}
-
-/* Estilización del carrusel */
-.carousel {
-  width: 100%;
-  margin: 0 auto;
-  opacity: 90%;
-  border-radius: 5px;
-  padding-bottom: 20px;
-  background-color: #fcfcfc;
-
-  img {
-    border-radius: 5px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* Ajustes para pantallas pequeñas */
-  @media (max-width: 700px) {
-    width: 100%;
-    padding: 10px;
-  }
-
-  @media (max-width: 500px) {
-    padding: 5px;
-  }
 }
 
 /* Estilo para listas */
@@ -57,12 +31,6 @@
   margin: 30px 20px;
 }
 
-/* Card */
-.card {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 aside {
   max-width: 85%;
   margin: 0 auto;
@@ -76,7 +44,7 @@ aside {
     justify-content: space-around;
     align-items: flex-start;
     gap: 2rem;
-    container-type: inline-size; 
+    container-type: inline-size;
     container-name: layout;
   }
 
@@ -87,13 +55,13 @@ aside {
   aside {
     max-width: 100%;
     margin-top: 20px;
-    width: 300px; 
+    width: 300px;
     flex-shrink: 0; // evita que se reduzca demasiado
   }
 }
 
-/* Usando container queries */
-@container layout (min-width: 700px) {
+/* Container Queries (se aplica después de media queries) */
+@container layout (min-width: 500px) {
   .layoutContainer {
     h5 {
       color: $color-titles-level1;
@@ -113,7 +81,7 @@ aside {
   }
 }
 
-/* Container queries (media queries dentro de contenedores) */
+/* Container queries para pantallas pequeñas (menos de 700px) */
 @container layout (max-width: 699px) {
   .layoutContainer {
     flex-direction: column; /* En pantallas pequeñas, las secciones se apilan */
