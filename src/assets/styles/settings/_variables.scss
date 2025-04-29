@@ -1,0 +1,21 @@
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-national-park: "National Park", sans-serif;
+  
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/*Colores*/
+$color-white: oklab(0.94 0.06 0.13);  
+$color-titles-level1: #005e22;
+$color-text: #001809;
+$color-primary-button: hsl(142, 67%, 37%);
+/*Personalizacion bootstrap variables*/
+$theme-colors: (
+  "primary": $color-primary-button
+);
+$card-subtitle-color: #4a6955;
+$btn-primary-color: #fff;    // Color del texto para .btn-primary
+$input-group-addon-bg: $color-titles-level1; // Color fondo span formulario
+$input-group-addon-color: #fff; //color texto span formulario

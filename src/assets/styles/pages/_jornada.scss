@@ -1,0 +1,131 @@
+/* Estilos generales */
+.skinMainJornada {
+  max-width: 85%;
+  margin: 20px auto;
+  container-type: inline-size;  
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.skinBodyJornada {
+  background-color: hsl(0, 0%, 93%);
+}
+
+/* Estilización del carrusel */
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 90%;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  background-color: #fcfcfc;
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 10px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 5px;
+  }
+}
+
+/* Estilo para listas */
+.skinUlJornada {
+  list-style: square;
+}
+
+/* Usando :is() */
+:is(.skinMainJornada) h1 {
+  text-align: center;
+  color: $color-titles-level1;
+}
+
+:is(.skinMainJornada) blockquote {
+  border-left: 2px solid $color-primary-button;
+  padding: 20px 10px;
+  text-align: left;
+  margin: 30px 20px;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+aside {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* Layout para pantallas grandes (mayores a 700px) */
+@media (min-width: 700px) {
+  .layoutContainer {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    container-type: inline-size; 
+    container-name: layout;
+  }
+
+  .skinMainJornada {
+    flex: 2; // ocupa el espacio principal
+  }
+
+  aside {
+    max-width: 100%;
+    margin-top: 20px;
+    width: 300px; 
+    flex-shrink: 0; // evita que se reduzca demasiado
+  }
+}
+
+/* Usando container queries */
+@container layout (min-width: 700px) {
+  .layoutContainer {
+    h5 {
+      color: $color-titles-level1;
+    }
+  }
+
+  .skinMainJornada {
+    flex: 2;
+    max-width: 100%;
+  }
+
+  aside {
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Container queries (media queries dentro de contenedores) */
+@container layout (max-width: 699px) {
+  .layoutContainer {
+    flex-direction: column; /* En pantallas pequeñas, las secciones se apilan */
+  }
+
+  .skinMainJornada {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  aside {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

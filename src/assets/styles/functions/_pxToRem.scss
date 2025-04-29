@@ -1,0 +1,5 @@
+@function px-to-rem($px) {
+    $rem:  calc($px / 16);
+    @return #{$rem}rem;  // Aseguramos que el valor es una cadena con la unidad 'rem'
+  }
+  

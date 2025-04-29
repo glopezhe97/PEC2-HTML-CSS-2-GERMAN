@@ -1,0 +1,51 @@
+.skinfooterRedes {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;  // Fondo oscuro
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;  // Texto blanco
+    border-top: 1px solid #444;  // Línea sutil arriba en color más claro
+  
+    nav {
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 0.85rem;
+      color: #ccc;  // Color más suave para el texto de copyright
+    }
+  
+    // Aseguramos que sea responsivo y se vea bien en dispositivos móviles
+    @media (max-width: 600px) {
+      padding: 1rem 0.5rem;
+      font-size: 0.85rem;
+      
+      nav a {
+        margin: 0 0.5rem;  // Reducimos los márgenes en móviles
+        font-size: 0.9rem;
+      }
+      
+      p {
+        font-size: 0.8rem;  // Reducimos un poco el tamaño del texto en móviles
+      }
+    }
+  }
+  
+  .skinLinksFooter {
+    margin: 0 1rem;
+    color: #fff;  // Enlaces blancos
+    text-decoration: none;
+    font-weight: bold;
+    
+    &:hover {
+        color: #449fff;  // Cambia el color del enlace al pasar el ratón
+    }
+}
+@supports(display: grid) {
+    @media (min-width: 600px) {
+        .skinfooterRedes {
+            margin: 0;
+        }
+    }
+}

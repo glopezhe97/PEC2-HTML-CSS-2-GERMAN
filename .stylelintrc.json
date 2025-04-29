@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+      "selector-max-id": 1,                        
+      "selector-max-specificity": "0,3,0",     
+      "max-nesting-depth": 2,
+      "no-duplicate-selectors": true,             
+      "block-no-empty": true,                      
+      "color-named": "never",                     
+      "font-family-no-missing-generic-family-keyword": true 
+    },
+    "order/properties-alphabetical-order": null, 
+    "plugin/order": [
+      [
+        "media",
+        "custom-properties",                     
+        "dollar-variables",                      
+        "at-rules",                             
+        "declarations",                        
+        "rules"                                
+      ]
+    ]
+   }
+  

@@ -1,0 +1,68 @@
+
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * 1. Settings – Variables y configuraciones
+ */
+ @import "./settings/variables";
+
+ /**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+@import url("npm:@fortawesome/fontawesome-free/css/all.css");
+
+ /**
+  * 2. Tools – Librerías externas, mixins, funciones (Bootstrap entra aquí)
+  */
+    @import "../../../node_modules/bootstrap/scss/bootstrap";
+ @import "./custom/custom";
+ /**
+  * 3. Generic – Reset/normalize, estilos base globales
+  */
+ @import "generic/base";
+
+ @import "functions/pxToRem";
+
+
+ /**
+  * 4. Elements – Estilos para etiquetas HTML básicas
+  */
+ @import "elements/links";
+ @import "elements/titles";
+ @import "elements/paragraph";
+ 
+ /**
+  * 5. Objects – Estructuras sin estilos visuales (wrappers, containers)
+  */
+ @import "objects/global";
+ 
+ /**
+  * 6. Components – Componentes visuales reutilizables (cards, botones, etc.)
+  */
+ @import "components/portada";
+ @import "components/contactForm";
+ 
+ /**
+  * 7. Layouts – Estructura principal del sitio (header, footer, grid)
+  */
+ @import "layouts/header";
+ @import "layouts/footer";
+
+ /**
+  * 8. Pages – Estilos específicos para cada página
+  */
+ @import "pages/participants";
+ @import "pages/jornada";
+ @import "pages/contacto";
+ 
+ /**
+  * 9. Utilities – Clases utilitarias (opcional si tienes)
+  */
+/**
+ * Do NOT include anything else in this file!
+ */
