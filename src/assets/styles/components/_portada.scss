@@ -258,5 +258,9 @@
           font-size: 1rem;
         }
       }
-      
+      @media (min-width: 600px) and (min-height: 1200px) {
+        .skinMainIndexContainer {
+          grid-template-rows: repeat(12, 1fr);
+        }
+      }
 }
