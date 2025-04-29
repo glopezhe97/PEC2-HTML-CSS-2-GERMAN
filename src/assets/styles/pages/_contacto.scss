@@ -19,11 +19,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .contactInfoSection ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+
 
   .skinMainContacto li:nth-of-type(odd) {
     color: #1b490a;
@@ -42,4 +38,10 @@
   .skinMainContacto .contactInfoSection a {
     color: #47682e;
   }
+}
+
+.skinUlInfo {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
 }
