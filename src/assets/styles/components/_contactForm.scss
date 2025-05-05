@@ -2,7 +2,9 @@
     max-width: 100lvw;
     margin: 0 auto;
     container-type: inline-size;  /* Habilita container queries */
-    background-color: color(display-p3 0.8745 0.8745 0.8745); /* Color de fondo predeterminado */
+    background-color: #dfdfdf; /* Fallback */
+
+    background-color: color(display-p3 0.8745 0.8745 0.8745); /* Color de fondo */
     padding: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
@@ -11,7 +13,7 @@
   /* Ajustar tamaño de los campos de entrada con container queries */
 @container (max-width: 599px) {
     .contactFormSection input, .contactFormSection select, .contactFormSection textarea {
-      font-size: cqw;
+      font-size: 3cqw;
     }
 }
   
