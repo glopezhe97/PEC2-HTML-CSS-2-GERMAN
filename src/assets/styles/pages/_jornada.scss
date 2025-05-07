@@ -18,8 +18,8 @@
   list-style: square;
 }
 
-/* Usando :is() */
-:is(.skinMainJornada) h1 {
+/* Usando :is() y has */
+.skinMainJornada:has(h1) h1 {
   text-align: center;
   color: $color-titles-level1;
 }
