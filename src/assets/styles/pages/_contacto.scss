@@ -1,5 +1,9 @@
 @layer baseGeneral, baseContacto, layout, components;
 
+.skinMainContacto {
+  width: 100svw;
+  max-height: 100svh;
+}
 /* ----------- BASE (Estilos básicos y generales) ----------- */
 @layer baseContacto {
   .skinMainContacto li {

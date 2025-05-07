@@ -1,9 +1,6 @@
 .contactFormSection {
-    max-width: 100lvw;
     margin: 0 auto;
     container-type: inline-size;  /* Habilita container queries */
-    background-color: #dfdfdf; /* Fallback */
-
     background-color: color(display-p3 0.8745 0.8745 0.8745); /* Color de fondo */
     padding: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
