@@ -9,7 +9,9 @@
       "no-duplicate-selectors": true,             
       "block-no-empty": true,                      
       "color-named": "never",                     
-      "font-family-no-missing-generic-family-keyword": true 
+      "font-family-no-missing-generic-family-keyword": true,
+      "declaration-no-important": true
+
     },
     "order/properties-alphabetical-order": null, 
     "plugin/order": [
